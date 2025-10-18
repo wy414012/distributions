@@ -1,14 +1,8 @@
 name: "Test Installation Scripts"
 
 on:
-  schedule:
-    - cron: "00 00 * * *"
   push:
-    branches:
-      - master
   pull_request:
-    branches:
-      - master
 
 jobs:
   deb:
@@ -158,3 +152,4 @@ jobs:
             echo "Node version is not ${{ matrix.version }}. It is $NODE_VERSION"
             exit 1
           fi
+
