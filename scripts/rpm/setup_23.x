@@ -66,7 +66,7 @@ module_hotfixes=1"
 echo "$NODEJS_REPO_CONTENT" | tee /etc/yum.repos.d/nodesource-nodejs.repo > /dev/null
 
 # Check if Node.js version is an LTS version
-if [[ "$NODE_VERSION" == "20.x" ]] || [[ "$NODE_VERSION" == "22.x" ]]; then
+if [[ "$NODE_VERSION" == "20.x" ]] || [[ "$NODE_VERSION" == "22.x" ]] || [[ "$NODE_VERSION" == "24.x" ]]; then
   # Repository content for N|Solid
   NSOLID_REPO_CONTENT="[nodesource-nsolid]
 name=N|Solid Packages for Linux RPM based distros - $SYS_ARCH
